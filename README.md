@@ -1,10 +1,10 @@
-# 🖨️ 3D Printing Defect Prediction Dashboard
+# 3D Printing Defect Prediction Dashboard
 
 An AI-powered web dashboard that predicts defects in 3D printed parts using printing parameters such as temperature, print speed, and infill density. The system helps reduce print failures, material waste, and improves quality monitoring in additive manufacturing.
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 3D printing processes often suffer from defects caused by improper parameter selection, leading to failed prints, increased production cost, and material wastage. Manual monitoring is inefficient and does not provide early defect prediction.
 
@@ -12,7 +12,7 @@ This project solves the problem by using Machine Learning to predict defects bef
 
 ---
 
-## 🚀 Features
+##  Features
 
 - ✅ Predicts 3D printing defects using AI model
 - ✅ Real-time web dashboard
@@ -23,7 +23,7 @@ This project solves the problem by using Machine Learning to predict defects bef
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 
 | Category | Technology |
 |---------|------------|
@@ -53,9 +53,9 @@ This project solves the problem by using Machine Learning to predict defects bef
 
 ---
 
-## 📊 Advantages
+##  Advantages
 
-- 🔹 Reduces material waste by **25–30%**
+- 🔹 Reduces material waste by 25–30%
 - 🔹 Decreases failed prints by **20–25%**
 - 🔹 Improves monitoring efficiency by **35–40%**
 - 🔹 Enables early defect detection
@@ -63,79 +63,6 @@ This project solves the problem by using Machine Learning to predict defects bef
 
 ---
 
-## 📁 Project Structure
-
-Yes 👍 — a **README** is the main description file on GitHub that explains your project, how to run it, and what it does.
-
-Below is a **professional GitHub README** you can directly copy-paste into `README.md`.
-
----
-
-# 📘 README.md — 3D Printing Defect Prediction Dashboard
-
-```markdown
-# 🖨️ 3D Printing Defect Prediction Dashboard
-
-An AI-powered web dashboard that predicts defects in 3D printed parts using printing parameters such as temperature, print speed, and infill density. The system helps reduce print failures, material waste, and improves quality monitoring in additive manufacturing.
-
----
-
-## 📌 Problem Statement
-
-3D printing processes often suffer from defects caused by improper parameter selection, leading to failed prints, increased production cost, and material wastage. Manual monitoring is inefficient and does not provide early defect prediction.
-
-This project solves the problem by using Machine Learning to predict defects before printing issues occur.
-
----
-
-## 🚀 Features
-
-- ✅ Predicts 3D printing defects using AI model
-- ✅ Real-time web dashboard
-- ✅ Confidence score for predictions
-- ✅ Prediction history tracking
-- ✅ Defect distribution visualization
-- ✅ User-friendly interface
-
----
-
-## 🧠 Technologies Used
-
-| Category | Technology |
-|---------|------------|
-| Programming Language | Python |
-| Backend | Flask |
-| Machine Learning | Decision Tree (Scikit-learn) |
-| Frontend | HTML, CSS, JavaScript |
-| Visualization | Chart.js |
-| Data Handling | Pandas, CSV |
-| Development Tool | VS Code |
-
----
-
-## ⚙️ How It Works
-
-1. User enters printing parameters:
-   - Temperature
-   - Print Speed
-   - Infill Density
-2. Machine learning model analyzes inputs.
-3. System predicts defect type.
-4. Dashboard displays:
-   - Predicted defect
-   - Confidence percentage
-   - Historical predictions
-   - Defect analytics chart.
-
----
-
-## 📊 Advantages
-
-- 🔹 Reduces material waste by **25–30%**
-- 🔹 Decreases failed prints by **20–25%**
-- 🔹 Improves monitoring efficiency by **35–40%**
-- 🔹 Enables early defect detection
-- 🔹 Supports smart manufacturing workflows
 
 ---
 ## Project Structure
