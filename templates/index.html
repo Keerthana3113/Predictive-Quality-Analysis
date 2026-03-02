@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Defect Predictor</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #203e5b, #75234c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            width: 420px;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+            text-align: center;
+        }
+
+        h1 {
+            color: #4b0082;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0 20px;
+        }
+
+        .images img {
+            width: 110px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #eee;
+        }
+
+        input {
+            width: 90%;
+            padding: 11px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 14px;
+        }
+
+        button {
+            width: 95%;
+            padding: 12px;
+            background: linear-gradient(90deg, #264462, #5d1338);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 12px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .result {
+            margin-top: 18px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Defect Predictor</h1>
+
+    <!-- 3D Printing Images -->
+    <div class="images">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.Lccti9EevsDTY0fu3eY9VAHaHa?pid=Api&P=0&h=180" alt="3D Print">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.zYN-4869DfeTNScR9s5PbQHaE7?pid=Api&P=0&h=180" alt="3D Printer">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.rF1PlWl_3n4JmOo-1t2G9QHaDt?pid=Api&P=0&h=180" alt="Printed Part">
+    </div>
+
+    <!-- Prediction Form -->
+    <form method="POST">
+        <input type="number" step="any" name="temperature" placeholder="Temperature (°C)" required>
+        <input type="number" step="any" name="speed" placeholder="Print Speed (mm/s)" required>
+        <input type="number" step="any" name="infill" placeholder="Infill Density (%)" required>
+
+        <button type="submit">Predict Defect</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        Predicted Defect: {{ prediction }}
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
